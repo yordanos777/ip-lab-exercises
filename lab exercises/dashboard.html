@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "aside main"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 60px 1fr 40px;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 1.5em;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside li {
+            margin-bottom: 15px;
+        }
+
+        aside a {
+            color: white;
+            text-decoration: none;
+        }
+
+        aside a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #fff;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #222;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            Admin Dashboard
+        </header>
+
+        <aside>
+            <ul>
+                <li><a href="#">Dashboard Home</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="card">
+                <h2>Welcome, Admin!</h2>
+                <p>This is your main dashboard area where you can monitor your system statistics and manage users.</p>
+            </div>
+
+            <div class="card">
+                <h3>Recent Activities</h3>
+                <ul>
+                    <li>User John updated profile</li>
+                    <li>New report generated</li>
+                    <li>User Sarah registered</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Statistics</h3>
+                <p>Users: 120 | Active Sessions: 45 | Reports Today: 10</p>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2025 Admin Dashboard. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

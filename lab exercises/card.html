@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Layout</title>
+
+    <style>
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 220px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 15px;
+            box-sizing: border-box;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin: 5px 0 10px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .price {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .cards {
+                flex-direction: column;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Product Page</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="pillow.webp" alt="Pillow">
+            <h3>Soft Pillow</h3>
+            <p>Comfortable premium bed pillow.</p>
+            <div class="price">$25.00</div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+
+        <div class="card">
+            <img src="mug.png" alt="Mug">
+            <h3>Classic Mug</h3>
+            <p>Perfect for coffee, tea, or hot chocolate.</p>
+            <div class="price">$12.00</div>
+            <a href="#" class="btn">Add to Cart</a>
+        </div>
+</body>
+</html>

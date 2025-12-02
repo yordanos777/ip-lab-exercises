@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Navigation Menu</title>
+
+    <style>
+        
+        nav ul li:first-child {
+            font-weight: bold;
+        }
+
+         nav a:hover {
+            color: red;
+        }
+
+        
+        nav a.active {
+            background: yellow;
+        }
+         nav > ul > li {
+            border-bottom: 1px solid gray;
+        }
+         a[target="_blank"] {
+            color: green;
+        }
+
+        nav {
+            width: 300px;
+            background: #f0f0f0;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            padding: 8px 10px;
+        }
+
+        nav ul li ul {
+            margin-top: 5px;
+            padding-left: 15px;
+            display: none; 
+        }
+
+        nav ul li:hover > ul {
+            display: block; 
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li>
+                <a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Mission & Vision</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">App Development</a></li>
+                    <li><a href="#">SEO Optimization</a></li>
+                </ul>
+            </li>
+            <li><a href="#" target="_blank">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

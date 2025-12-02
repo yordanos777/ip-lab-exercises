@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-First Responsive Design</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            font-size: 14px; /* Mobile default */
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        /* Tablet */
+        @media (min-width: 600px) {
+            body {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        /* Desktop */
+        @media (min-width: 900px) {
+            body {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mobile-First Responsive Page</h1>
+    </header>
+
+    <main>
+        <p>
+            This is a sample responsive page using a mobile-first approach. The font size adjusts according to the device screen width.
+        </p>
+        <p>
+            Resize the browser window or open this page on different devices to see the text size change for tablets and desktops.
+        </p>
+    </main>
+
+    <footer>
+        &copy; 2025 Responsive Design Example
+    </footer>
+
+</body>
+</html>

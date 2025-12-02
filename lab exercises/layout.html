@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Navigation Example</title>
+
+    <style>
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #4A90E2;
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            padding: 12px 20px;
+            background: #9013FE;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 60px; 
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 40px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>My Website</h2>
+    </nav>
+
+    
+    <button>Contact Us</button>
+
+    
+    <section>
+        <div class="sticky-header">Section 1: Introduction</div>
+        <p>
+            Welcome to our website. This section contains an introduction to our services and company values. 
+            Scroll down to see the sticky headers and fixed navigation in action.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, 
+            dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+        </p>
+    </section>
+
+    <section>
+        <div class="sticky-header">Section 2: Services</div>
+        <p>
+            Our services include web development, app development, and digital marketing. The sticky header ensures 
+            the section title is always visible while scrolling.
+        </p>
+        <p>
+            Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. 
+            Praesent congue erat at massa.
+        </p>
+    </section>
+
+    <section>
+        <div class="sticky-header">Section 3: Contact</div>
+        <p>
+            Get in touch with us using the fixed contact button at the bottom right. We value your feedback 
+            and inquiries.
+        </p>
+        <p>
+            Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat 
+            libero tortor eget magna.
+        </p>
+    </section>
+
+</body>
+</html>
